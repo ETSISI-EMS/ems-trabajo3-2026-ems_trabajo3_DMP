@@ -51,7 +51,7 @@ public class FechaHora implements Comparable<FechaHora>{
 	}
 
 	public static class Hora {
-		private int hora, minuto;
+		private int hora, minuto, segundos;
 
 		public Hora(int hora, int minuto) {
 			super();
@@ -73,6 +73,14 @@ public class FechaHora implements Comparable<FechaHora>{
 
 		public void setMinuto(int minuto) {
 			this.minuto = minuto;
+		}
+
+		public int getSegundos() {
+			return segundos;
+		}
+
+		public void setSegundos(int segundos) {
+			this.segundos = segundos;
 		}
 
 		@Override
